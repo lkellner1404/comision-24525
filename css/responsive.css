@@ -5,6 +5,15 @@
     --bg-accent: #AFD5AA;
 }
 
+/* ACA VA ANIMACION */
+.squish{
+    transition: 235ms;
+}
+.squish:hover{
+    transform: scale(0.75,1.25);
+}
+/* ACA TERMINA ANIMACION */
+
 *{
     margin: 0;
     padding: 0;
@@ -28,10 +37,6 @@ header img {
     width: 80vw;
     padding: 0.5rem;
 }
-
-/* header nav {
-    width: 80vw; 
-} */
 
 header ul {
     padding: 0.5rem;
