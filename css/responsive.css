@@ -1,0 +1,643 @@
+:root{
+    --bg-dark: #1F72A6;
+    --bg-light: #96B9D9;
+    --shadow: #2e2e2e;
+    --bg-accent: #AFD5AA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    background-color: var(--bg-dark);
+}
+
+header {
+    font-size: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header img {
+    width: 80vw;
+    padding: 0.5rem;
+}
+
+/* header nav {
+    width: 80vw; 
+} */
+
+header ul {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    margin: 2px 0.5rem;
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+header li>a,
+footer li>a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 5px 5px 10px var(--bg-light),
+                5px -5px 10px var(--bg-light),
+                -5px -5px 10px var(--bg-light),
+                -5px 5px 10px var(--bg-light);
+}
+
+main h1, main h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+}
+main .ubicacion-link{
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+main iframe {
+    display: none;
+}
+main img {
+    width: 80vw;
+    padding: 1rem;
+    border-radius: 5em;
+}
+.ubicacion-grid-medios{
+    text-align: center;
+}
+.ubicacion-grid-medios img{
+    width: 30vw;
+    border-radius: 0;
+}
+.serv-list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.serv-list ul{
+    list-style: circle;
+}
+
+#obrasSociales p{
+    width: auto;
+}
+.obrasSociales-list-item{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.obrasSociales-list-item p{
+    width: auto;
+}
+
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.contact-grid>section{
+    margin: 0.4rem;
+}
+.contact-name,
+.contact-email,
+.contact-comment,
+.contact-meet {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+input, textarea, select {
+    width: 50vw;
+    font-family: inherit;
+}
+.contact-btns{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.contact-btns>input{
+    max-width: 35vw;
+}
+
+footer {
+    padding: 1rem;
+    font-size: 0.5rem;
+}
+
+footer ul {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer li{
+    display: inline;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width:1023px) {
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    header img {
+        width: 36vw;
+    } 
+    header ul {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    header li {
+        font-size: 0.80rem;
+    }
+    main {
+        margin: 1rem 2rem;
+    }
+    main h1, main h2 {
+        font-size: 3em;
+    }
+    main p {
+        font-size: 1.5em;
+    }
+    .serv-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+    }
+    .serv-list div{
+        padding-left: 20px;
+    }
+    .serv-list2, .serv-list3{
+        grid-column: 1/2;
+    }
+    .serv-list4 {
+        grid-column: 2/3;
+        grid-row-start: 1;
+    }
+    .serv-list5 {
+        grid-column: 2/3;
+        grid-row-start: 2;
+    }
+    .serv-list6 {
+        grid-column: 2/3;
+        grid-row-start: 3;
+    }
+    .ubicacion-link a{
+        display: none;
+    }
+    .ubicacion-link iframe{
+        display: block;
+        margin: 0.7rem;
+    }
+    .ubicacion-grid-medios img{
+        width: 20vw;
+    }
+    .ubicacion-grid-medios h3{
+        font-size: 2em;
+    }
+    .obrasSociales-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .obrasSociales-list-item img{
+        width: 40vw;
+    }
+    
+    .contact-btns>input{
+        max-width: 30vw;
+        gap: 10px;
+    }
+
+
+    footer {
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    footer p {
+        width: 45%;
+    }
+    footer nav{
+        width: 100%;
+    }
+    footer li {
+        margin: 0 2px;
+    }
+}
+
+/* laptop */
+@media (min-width: 1024px) and (max-width:1439px){
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    header img {
+        width: 30vw;
+    }
+    header li { 
+        font-size: 0.95rem;
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+    header li:hover {
+        background: var(--bg-accent);
+    }
+    main {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+    main h1, main h2 {
+        font-size: 3.2rem;
+    }
+    main .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "p1 img"
+        "p2 p2"
+        "p3 p3";
+    }
+    .container p:first-child{
+        grid-area: p1;
+        text-align: justify;
+        width: auto;
+    }
+    .container p:nth-child(2){
+        grid-area: p2;
+        text-align: justify;
+        width: auto;
+    }
+    .container p:last-child{
+        grid-area: p3;
+        text-align: justify;
+        width: auto;
+    }
+    .container div {
+        grid-area: img;
+    }
+    .container img {
+        max-width: 40vw;
+    }
+    .serv-grid{
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .serv-grid img{
+        max-width: 40vw;
+    }
+    .serv-grid div:last-of-type{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .serv-grid p:last-of-type{
+        grid-column: 2/3;
+    }
+    .serv-list{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+    }
+    .serv-list div{
+        padding-left: 20px;
+    }
+    .serv-list2, .serv-list3{
+        grid-column: 1/2;
+    }
+    .serv-list4 {
+        grid-column: 2/3;
+        grid-row-start: 1;
+    }
+    .serv-list5 {
+        grid-column: 2/3;
+        grid-row-start: 2;
+    }
+    .serv-list6 {
+        grid-column: 2/3;
+        grid-row-start: 3;
+    }
+    .ubicacion-link a{
+        display: none;
+    }
+    .ubicacion-link iframe{
+        display: block;
+        margin: 1rem;
+    }
+    .ubicacion-grid-medios{
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .ubicacion-grid-medios .img-colectivo{
+        width: 20vw;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .ubicacion-grid-medios .img-subte{
+        width: 20vw;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .ubicacion-grid-medios .img-tren{
+        width: 20vw;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .ubicacion-grid-medios .img-bici{
+        width: 20vw;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .ubicacion-grid-medios article{
+        justify-content: center;
+        align-items: center;
+    }
+    .ubicacion-grid-medios article h3{
+        font-size: 1.5rem;
+    }
+    .obrasSociales-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .obrasSociales-list-item img{
+        width: 40vw;
+    }
+
+    input, textarea, select {
+        width: 40vw;
+    }
+    .contact-btns>input{
+        max-width: 25vw;
+        gap: 10px;
+    }
+
+    footer{
+        align-items: center;
+        font-size: 1rem;
+    }
+}
+
+/* escritorio */
+@media (min-width: 1440px) {
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }   
+    header img{
+        width: 20vw;
+    }
+    header li {
+        padding: 1.5vw;
+        margin: 0.2rem 1.5rem;
+        font-size: 1.15rem;
+        border-radius: 1rem;
+        box-shadow: 10px 5px 5px var(--shadow) ;
+    }
+    header li:hover {
+        background: var(--bg-accent);
+    }
+    a:link, a:visited {
+        color: black;
+    }
+    main{
+        max-width: 80vw;
+        margin:auto
+    }
+    main h1, main h2{
+        font-size: 3rem;
+    }
+    main .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "p1 p1 img"
+        "p2 p2 img"
+        "p3 p3 p3";
+    }
+    .container p:first-child{
+        grid-area: p1;
+        text-align: justify;
+        width: auto;
+    }
+    .container p:nth-child(2){
+        grid-area: p2;
+        text-align: justify;
+        width: auto;
+    }
+    .container p:last-child{
+        grid-area: p3;
+        text-align: justify;
+        width: auto;
+    }
+    .container div {
+        grid-area: img;
+    }
+    .container img {
+        max-width: 40vw;
+    }
+
+    .serv-grid img{
+        width: 85%;
+        max-width: 40vw;
+    }
+    .serv-grid{
+        display: grid;
+        width: 75vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "p1 p1 img1" 
+            "img2 p2 p2";
+        gap: 0.5rem;
+    }
+    .serv-grid p:first-of-type{
+        grid-area: p1;
+        text-align: justify;
+        width: auto;
+        padding: 1rem ;
+    }
+    .serv-grid p:last-of-type{
+        grid-area: p2;
+        text-align: justify;
+        width: auto;
+        padding: 1rem ;
+    }
+    .serv-grid div:first-of-type{
+        grid-area: img1;
+    }
+    .serv-grid div:last-of-type{
+        grid-area: img2;
+    }
+    
+    .serv-list{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+        column-gap: 1vw;
+    }
+    .serv-list ul{
+        list-style: none;
+        text-align: center;
+    }
+    .serv-list2{
+        grid-column: 1/2;
+    }
+    .serv-list3{
+        grid-column: 2/3;
+        grid-row-start: 1;
+    }
+    .serv-list4 {
+        grid-column: 2/3;
+        grid-row-start: 2;
+    }
+    .serv-list5 {
+        grid-column: 3/4;
+        grid-row-start: 1;
+    }
+    .serv-list6 {
+        grid-column: 3/4;
+        grid-row-start: 2;
+    }
+    .ubicacion-link a{
+        display: none;
+    }
+    .ubicacion-link iframe{
+        display: block;
+        margin: 1rem;
+    }
+    .ubicacion-grid-medios{
+        width: 60vw;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 110px auto;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .ubicacion-grid-medios .img-colectivo{
+        width: 100px;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .ubicacion-grid-medios .img-subte{
+        width: 100px;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .ubicacion-grid-medios .img-tren{
+        width: 100px;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .ubicacion-grid-medios .img-bici{
+        width: 100px;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .ubicacion-grid-medios article{
+        justify-content: center;
+        align-items: center;
+    }
+    .ubicacion-grid-medios article h3{
+        font-size: 1.5rem;
+    }
+    .obrasSociales-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .obrasSociales-list-item img{
+        width: 30vw;
+    }
+
+    #contact img{
+        max-width: 50vw;
+    }
+    #contact fieldset, .contact-grid label{
+        font-size: 0.8rem;
+    }
+    .contact-grid>section{
+        margin: 0.8rem;
+    }
+    .contact-name,
+    .contact-email,
+    .contact-comment,
+    .contact-meet{
+        grid-template-columns: 150px 1fr;
+    }
+    input, textarea, select {
+        width: 35vw;
+    }
+    .contact-btns{
+        gap: 4rem;
+    }
+    .contact-btns>input{
+        max-width: 15vw;
+    }
+
+
+    footer {
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer p {
+        width: 50%;
+    }
+    footer nav {
+        display: flex;
+        justify-content: end;
+    }
+    footer li {
+        margin: 0 15px;
+    }
+}
