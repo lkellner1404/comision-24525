@@ -7,12 +7,37 @@
     <title>MEGADIAGNOSTICO - HOME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/estilo-con-bt.css">
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <header id="header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid ">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./img/logo.svg" alt="logo" class="nav-logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navegacion" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/quienes-trabajan.html">Quienes trabajan con nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!-- <header id="header">
         <a href="./index.html"><img src="./img/logo.svg" alt="logo" class="header__img"></a>
         <nav class="header__menu">
             <ul>
@@ -22,21 +47,38 @@
                 <li class="squish"><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     
     <!-- empieza -->
     <main id="intro"> 
         
-            <h1>Quienes somos</h1>
-            <article class="container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat tempore odio nam nesciunt. Quibusdam similique earum unde nam libero, explicabo velit itaque? Amet nostrum, a eveniet harum ullam aut iure blanditiis vel enim nobis eius? Exercitationem, blanditiis culpa rerum illo id quisquam hic consequatur voluptate ipsum. Nisi adipisci soluta eaque! Vel, similique placeat sapiente cumque, aperiam error, animi illo minima fugit suscipit consequuntur. Repellat inventore incidunt, itaque aspernatur adipisci debitis repudiandae nostrum repellendus saepe et ut architecto eligendi! Nemo beatae cumque labore minus aspernatur architecto necessitatibus! Saepe enim adipisci a fuga, nostrum molestiae magnam velit atque eum aut explicabo!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ea ab atque! Odit dolore eos quia, officiis ut dolorem omnis voluptatum similique est nulla tenetur totam, sunt quaerat dignissimos sapiente. Quod sit perspiciatis nulla debitis quae saepe nesciunt laborum omnis voluptatem, eum deleniti necessitatibus dolorem esse animi non consequatur culpa praesentium fugiat odio doloremque ullam excepturi neque? Quos quidem dolor, beatae amet, consectetur possimus hic provident dolorum, vitae officia quia eveniet nam. Quo nostrum suscipit dolore, totam esse quam dicta nihil vero enim excepturi ullam. Ullam voluptas quibusdam natus fugiat aspernatur eos, officiis amet in molestias atque nobis quis. Porro consequuntur quaerat, id cumque ex animi debitis? Laudantium optio minus repudiandae ipsa recusandae ducimus illo. Quia sed exercitationem tempore facere dicta? Quisquam dolorem veritatis quis harum cumque deleniti reiciendis inventore officiis modi. Cupiditate hic pariatur veniam voluptas quas explicabo sapiente officia optio saepe dolorem, distinctio corrupti consectetur ipsam et nam quis odio magni ipsa vero incidunt. Dolor sed officiis, facilis labore commodi laborum porro amet, maiores assumenda ducimus aperiam adipisci sunt sequi debitis veritatis repellat perferendis omnis ex. Beatae ab dignissimos doloremque nihil molestias suscipit non quod esse, sint minus mollitia totam et temporibus nemo voluptatibus quos sapiente minima quasi!</p>
-                <div>
-                    <img src="./img/handshake.jpg" alt="img handshake" class="intro__text--img">
+        <div class="container-fluid m-1">
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="text-center">Quienes somos</h1>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde suscipit, veniam cupiditate totam error mollitia soluta quia voluptatem, ea quibusdam velit neque libero atque magni facere omnis impedit? Modi necessitatibus dolor assumenda! Cum, autem esse! Rerum sunt blanditiis fugiat eos vero aspernatur error unde! Laborum exercitationem quam odio nesciunt quidem nemo tenetur itaque inventore temporibus pariatur! Officia, commodi eum? Ratione saepe error magnam corporis hic ea exercitationem distinctio animi maiores in ab quas quam temporibus, itaque explicabo asperiores alias iure, suscipit rerum! Aliquam facere esse veniam magnam pariatur natus possimus itaque ipsam id rem! Sequi alias vero reiciendis neque.</p>
-                
-            </article>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-8">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ea ab atque! Odit dolore eos quia, officiis ut dolorem omnis voluptatum similique est nulla tenetur totam, sunt quaerat dignissimos sapiente. Quod sit perspiciatis nulla debitis quae saepe nesciunt laborum omnis voluptatem, eum deleniti necessitatibus dolorem esse animi non consequatur culpa praesentium fugiat odio doloremque ullam excepturi neque? Quos quidem dolor, beatae amet, consectetur possimus hic provident dolorum, vitae officia quia eveniet nam. Quo nostrum suscipit dolore, totam esse quam dicta nihil vero enim excepturi ullam. Ullam voluptas quibusdam natus fugiat aspernatur eos, officiis amet in molestias atque nobis quis. Porro consequuntur quaerat, id cumque ex animi debitis? Laudantium optio minus repudiandae ipsa recusandae ducimus illo. Quia sed exercitationem tempore facere dicta? Quisquam dolorem veritatis quis harum cumque deleniti reiciendis inventore officiis modi. Cupiditate hic pariatur veniam voluptas quas explicabo sapiente officia optio saepe dolorem, distinctio corrupti consectetur ipsam et nam quis odio magni ipsa vero incidunt. Dolor sed officiis, facilis labore commodi laborum porro amet, maiores assumenda ducimus aperiam adipisci sunt sequi debitis veritatis repellat perferendis omnis ex. Beatae ab dignissimos doloremque nihil molestias suscipit non quod esse, sint minus mollitia totam et temporibus nemo voluptatibus quos sapiente minima quasi!</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="./img/handshake.jpg" alt="img handshake" class="img-fluid img-border-radius">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat tempore odio nam nesciunt. Quibusdam similique earum unde nam libero, explicabo velit itaque? Amet nostrum, a eveniet harum ullam aut iure blanditiis vel enim nobis eius? Exercitationem, blanditiis culpa rerum illo id quisquam hic consequatur voluptate ipsum. Nisi adipisci soluta eaque! Vel, similique placeat sapiente cumque, aperiam error, animi illo minima fugit suscipit consequuntur. Repellat inventore incidunt, itaque aspernatur adipisci debitis repudiandae nostrum repellendus saepe et ut architecto eligendi! Nemo beatae cumque labore minus aspernatur architecto necessitatibus! Saepe enim adipisci a fuga, nostrum molestiae magnam velit atque eum aut explicabo!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde suscipit, veniam cupiditate totam error mollitia soluta quia voluptatem, ea quibusdam velit neque libero atque magni facere omnis impedit? Modi necessitatibus dolor assumenda! Cum, autem esse! Rerum sunt blanditiis fugiat eos vero aspernatur error unde! Laborum exercitationem quam odio nesciunt quidem nemo tenetur itaque inventore temporibus pariatur! Officia, commodi eum? Ratione saepe error magnam corporis hic ea exercitationem distinctio animi maiores in ab quas quam temporibus, itaque explicabo asperiores alias iure, suscipit rerum! Aliquam facere esse veniam magnam pariatur natus possimus itaque ipsam id rem! Sequi alias vero reiciendis neque.</p>
+                </div>
+            </div>
+        </div>
+
+
         
     </main>
     <!-- termina -->
@@ -53,5 +95,9 @@
             </ul>
         </nav>
     </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

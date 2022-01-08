@@ -1,0 +1,60 @@
+:root{
+    --bg-dark: #1F72A6;
+    --bg-light: #96B9D9;
+    --shadow: #2e2e2e;
+    --bg-accent: #AFD5AA;
+}
+
+/* ACA VA ANIMACION */
+.squish{
+    transition: 235ms;
+}
+.squish:hover{
+    transform: scale(0.75,1.25);
+}
+/* ACA TERMINA ANIMACION */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    background-color: var(--bg-dark);
+}
+
+.nav-item{
+    padding: 5px;
+    margin: 2px 0.5rem;
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--shadow);   
+}
+.nav-logo{
+    width: 200px;
+}
+
+
+
+
+main {
+    margin: 2rem;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--bg-light),
+                5px -5px 10px var(--bg-light),
+                -5px -5px 10px var(--bg-light),
+                -5px 5px 10px var(--bg-light);
+}
+main h1{
+    font-size: 3rem;
+}
+main p {
+    font-size: 1rem;
+}
+.img-border-radius{
+    border-radius: 5em;
+}
