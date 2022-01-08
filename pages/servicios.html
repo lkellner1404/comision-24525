@@ -7,12 +7,36 @@
     <title>MEGADIAGNOSTICO - SERVICIOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/estilo-con-bt.css">
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <header id="header">
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid ">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../img/logo.svg" alt="logo" class="nav-logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navegacion" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/quienes-trabajan.html">Quienes trabajan con nosotros</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- <header id="header">
         <a href="../index.html"><img src="../img/logo.svg" alt="logo" class="header__img"></a>
         <nav class="header__menu">
             <ul>
@@ -22,72 +46,73 @@
                 <li class="squish"><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     
     <!-- empieza -->
     <main id="serv">
-        <h1>Nuestros servicios</h1>
-        <article class="serv-grid">
-            <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nemo iste minima eos sed alias obcaecati sunt eligendi cum veniam iure pariatur minus temporibus, consectetur architecto labore omnis. Quasi, harum. Aspernatur dolor harum fuga quidem ex tenetur ullam repellat aperiam, voluptates beatae cumque praesentium ea commodi placeat tempore modi minus accusamus sapiente. Magni odio quas possimus et vel vero voluptatibus sequi repellendus consequatur id laudantium porro impedit, quisquam aliquid excepturi fuga eum error illo doloribus aliquam, temporibus necessitatibus. Nobis at commodi dolor molestias officia ratione doloribus ad vel obcaecati, adipisci doloremque officiis assumenda deserunt sed, fugit quia iste unde sapiente! Recusandae incidunt accusamus alias, blanditiis ducimus eaque. Eum sint error quo, tempore vel minima saepe temporibus unde vitae. Sint pariatur molestias labore! Officiis reiciendis, nostrum quo autem consequuntur eligendi at a necessitatibus commodi enim quos, laborum explicabo. Vel totam similique quidem odit, quis dolorem quod! Temporibus, maiores sapiente. Autem accusantium quae amet accusamus commodi tempora sunt, natus rerum eveniet minima. Quod at debitis, fugiat voluptates earum rem nostrum! Numquam facilis consectetur quam soluta laudantium consequatur obcaecati officia ipsum cupiditate quasi velit, porro fugit provident tenetur. Saepe corporis optio dolore quod. Sit, dolorem blanditiis quia corporis numquam obcaecati culpa quo laboriosam!</p>
-            <div>
-                <img src="../img/ecografia.jpg" alt="imagen ecografia">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center fw-bold m-3">Nuestros servicios</h1>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur tempore alias voluptatem nam architecto. Ipsa eveniet id quasi explicabo illo perferendis. Atque autem quae accusamus maiores ratione accusantium illum officiis? Aliquid accusantium itaque natus impedit enim optio, nam fugiat maxime est tenetur repellendus autem rem minima eaque velit omnis. Eaque suscipit exercitationem perspiciatis numquam molestiae laborum aliquid, similique saepe vero dolore ipsum aliquam illo aperiam alias corporis reiciendis excepturi sed pariatur recusandae consectetur. Perferendis praesentium tenetur architecto ipsa ex repellat, impedit exercitationem soluta nobis eius itaque dolor veniam nulla voluptates, maxime labore porro ipsum maiores quam odit animi corporis dolorem? Dolore inventore non quia voluptatem fuga quis, deserunt cum similique doloremque, provident commodi dignissimos numquam tempore veritatis dicta. Tenetur voluptates, fugiat inventore consequatur ad omnis nobis distinctio optio ipsa odit at nihil quo animi, ducimus mollitia! Architecto doloremque vel tenetur, omnis suscipit soluta? Explicabo, alias eligendi eum saepe quae, illo libero vitae, suscipit ducimus nobis aliquam. Rem delectus at quam eos modi error, excepturi cumque ducimus! Cum, nesciunt quibusdam sequi, velit doloremque nisi sed, error veritatis cupiditate corrupti voluptatibus dolores quos. Aperiam pariatur praesentium vero dolores facilis et ut sit nostrum, sint cumque mollitia tempora exercitationem, cupiditate, quaerat in?</p>
-            <div>
-                <img src="../img/analisis-sangre.jpg" alt="imagen analisis de sangre">
+
+            <div class="row mb-3">
+                <div class="col-lg-8">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nemo iste minima eos sed alias obcaecati sunt eligendi cum veniam iure pariatur minus temporibus, consectetur architecto labore omnis. Quasi, harum. Aspernatur dolor harum fuga quidem ex tenetur ullam repellat aperiam, voluptates beatae cumque praesentium ea commodi placeat tempore modi minus accusamus sapiente. Magni odio quas possimus et vel vero voluptatibus sequi repellendus consequatur id laudantium porro impedit, quisquam aliquid excepturi fuga eum error illo doloribus aliquam, temporibus necessitatibus. Nobis at commodi dolor molestias officia ratione doloribus ad vel obcaecati, adipisci doloremque officiis assumenda deserunt sed, fugit quia iste unde sapiente! Recusandae incidunt accusamus alias, blanditiis ducimus eaque. Eum sint error quo, tempore vel minima saepe temporibus unde vitae. Sint pariatur molestias labore! Officiis reiciendis, nostrum quo autem consequuntur eligendi at a necessitatibus commodi enim quos, laborum explicabo. Vel totam similique quidem odit, quis dolorem quod! Temporibus, maiores sapiente. Autem accusantium quae amet accusamus commodi tempora sunt, natus rerum eveniet minima. Quod at debitis, fugiat voluptates earum rem nostrum! Numquam facilis consectetur quam soluta laudantium consequatur obcaecati officia ipsum cupiditate quasi velit, porro fugit provident tenetur. Saepe corporis optio dolore quod. Sit, dolorem blanditiis quia corporis numquam obcaecati culpa quo laboriosam!</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../img/ecografia.jpg" alt="imagen ecografia" class="img-fluid img-border-radius">
+                </div>    
             </div>
-        </article>
+
+            <div class="row mb-3">
+                <div class="col-lg-4">
+                    <img src="../img/analisis-sangre.jpg" alt="imagen analisis de sangre" class="img-fluid img-border-radius">
+                </div>
+                <div class="col-lg-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur tempore alias voluptatem nam architecto. Ipsa eveniet id quasi explicabo illo perferendis. Atque autem quae accusamus maiores ratione accusantium illum officiis? Aliquid accusantium itaque natus impedit enim optio, nam fugiat maxime est tenetur repellendus autem rem minima eaque velit omnis. Eaque suscipit exercitationem perspiciatis numquam molestiae laborum aliquid, similique saepe vero dolore ipsum aliquam illo aperiam alias corporis reiciendis excepturi sed pariatur recusandae consectetur. Perferendis praesentium tenetur architecto ipsa ex repellat, impedit exercitationem soluta nobis eius itaque dolor veniam nulla voluptates, maxime labore porro ipsum maiores quam odit animi corporis dolorem? Dolore inventore non quia voluptatem fuga quis, deserunt cum similique doloremque, provident commodi dignissimos numquam tempore veritatis dicta. Tenetur voluptates, fugiat inventore consequatur ad omnis nobis distinctio optio ipsa odit at nihil quo animi, ducimus mollitia! Architecto doloremque vel tenetur, omnis suscipit soluta? Explicabo, alias eligendi eum saepe quae, illo libero vitae, suscipit ducimus nobis aliquam. Rem delectus at quam eos modi error, excepturi cumque ducimus! Cum, nesciunt quibusdam sequi, velit doloremque nisi sed, error veritatis cupiditate corrupti voluptatibus dolores quos. Aperiam pariatur praesentium vero dolores facilis et ut sit nostrum, sint cumque mollitia tempora exercitationem, cupiditate, quaerat in?</p>
+                </div>    
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center fw-bold m-3">Nuestros Servicios Incluyen...</h1>
+                </div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-lg fs-6">Item 1</div>
+                <div class="col-lg fs-6">Item 2</div>
+                <div class="col-lg fs-6">Item 3</div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-lg fs-6">Item 4</div>
+                <div class="col-lg fs-6">Item 5</div>
+                <div class="col-lg fs-6">Item 6</div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-lg fs-6">Item 7</div>
+                <div class="col-lg fs-6">Item 8</div>
+                <div class="col-lg fs-6">Item 9</div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg fs-6">Item 10</div>
+                <div class="col-lg fs-6">Item 11</div>
+                <div class="col-lg fs-6">Item 12</div>
+            </div> 
+            <div class="row text-center m-3">
+                <div class="col fs-5">Entre otros...</div>
+            </div>
+            <div class="row"></div>
+            
+        </div>
         
-        <h2>Nuestros Servicios Incluyen...</h2>
-        <section class="serv-list">
-            <div class="serv-list1">
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-            </div>
-            <div class="serv-list2">
-                <ul>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                    <li>Item 6</li>
-                </ul>
-            </div>
-            <div class="serv-list3">
-                <ul>
-                    <li>Item 7</li>
-                    <li>Item 8</li>
-                    <li>Item 9</li>
-                </ul>
-            </div>
-            <div class="serv-list4">
-                <ul>
-                    <li>Item 10</li>
-                    <li>Item 11</li>
-                    <li>Item 12</li>
-                </ul>
-            </div>
-            <div class="serv-list5">
-                <ul>
-                    <li>Item 13</li>
-                    <li>Item 14</li>
-                    <li>Item 15</li>
-                </ul>
-            </div>
-            <div class="serv-list6">
-                <ul>
-                    <li>Item 16</li>
-                    <li>Item 17</li>
-                    <li>Item 18</li>
-                </ul>
-            </div>
-        </section>
     </main>
     <!-- termina -->
     
     <footer id="footer">
-        <p class="footer__text">&copy;2021</p>
+        <p class="footer__text">Todos los derechos reservados &copy;2021</p>
         <nav class="footer__menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -98,5 +123,9 @@
             </ul>
         </nav>
     </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
