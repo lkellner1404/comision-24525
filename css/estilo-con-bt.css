@@ -27,21 +27,27 @@ body {
 }
 
 .nav-item{
-    padding: 5px;
-    margin: 2px 0.5rem;
+    font-size: 1rem;
+    padding: 1vw;
+    margin: 0.2rem 1.5rem;
     background-color: var(--bg-light);
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--shadow);   
 }
 .nav-logo{
-    width: 200px;
+    width: 20vw;
+}
+
+a:link, a:visited {
+    color: black;
 }
 
 
 
 
 main {
-    margin: 2rem;
+    width: 90vw;
+    margin: 2rem auto;
     background-color: var(--bg-light);
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--bg-light),
@@ -57,4 +63,17 @@ main p {
 }
 .img-border-radius{
     border-radius: 5em;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer nav ul {
+    list-style: none;
+}
+footer nav ul li {
+    display: inline;
+    padding: 0.2rem;
 }
