@@ -7,12 +7,36 @@
     <title>MEGADIAGNOSTICO - UBICACION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/estilo-con-bt.css">
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <header id="header">
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid ">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../img/logo.svg" alt="logo" class="nav-logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navegacion" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/quienes-trabajan.html">Quienes trabajan con nosotros</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item squish"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- <header id="header">
         <a href="../index.html"><img src="../img/logo.svg" alt="logo" class="header__img"></a>
         <nav class="header__menu">
             <ul>
@@ -22,45 +46,121 @@
                 <li class="squish"><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <!-- empieza -->
     <main id="ubicacion">
-        <h1>Donde nos encontramos?</h1>
-        <section class="ubicacion-link">
-            <a href="https://www.google.com.ar/maps/place/Megadiagnostico+Sede+Auditoria/@-34.6115069,-58.3997084,17.08z/data=!4m5!3m4!1s0x95bccae8c500d491:0x7ad75742bbd257b6!8m2!3d-34.610765!4d-58.3994521">Abrir en GoogleMaps</a>
-            <div class="ubicacion-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.5162815910444!2d-58.39861392947743!3d-34.6110418744765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae8c500d491%3A0x7ad75742bbd257b6!2sMegadiagnostico%20Sede%20Auditoria!5e0!3m2!1ses-419!2sar!4v1638832271242!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center fw-bold m-3">Donde nos encontramos?</h1>
+                </div>
             </div>
-        </section>
-        <h2>Como llegar</h2>
-        <section class="ubicacion-grid-medios">
-            <img src="../img/bus.svg" alt="colectivo" class="img-colectivo">
+        </div>
+        <div class="container-xl">
+            <div class="row">
+                <iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.5162815910444!2d-58.39861392947743!3d-34.6110418744765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae8c500d491%3A0x7ad75742bbd257b6!2sMegadiagnostico%20Sede%20Auditoria!5e0!3m2!1ses-419!2sar!4v1638832271242!5m2!1ses-419!2sar" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div> 
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center fw-bold m-3">Como llegar</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mb-3">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../img/bus.svg" alt="colectivo" class="img-ubicacion">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h4>Lineas de Colectivo</h4>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container text-center mb-3">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../img/metro.svg" alt="subte" class="img-ubicacion">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h4>Lineas de Subte</h4>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container text-center mb-3">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../img/train.svg" alt="tren" class="img-ubicacion">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h4>Lineas de Tren</h4>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container text-center mb-3">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../img/bycicle.svg" alt="bici" class="img-ubicacion">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h4>Estaciones de BaBici</h4>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+            
+            
+            
+            
+        <!-- <section class="ubicacion-grid-medios">
             <article>
-                <h3>Lineas de Colectivo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio.</p>
             </article>
-            <img src="../img/metro.svg" alt="subte" class="img-subte">
+            <img src="../img/metro.svg" alt="subte" class="img-ubicacion">
             <article>
                 <h3>Lineas de Subte</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, sunt?</p>
             </article>
-            <img src="../img/train.svg" alt="tren" class="img-tren">
+            <img src="../img/train.svg" alt="tren" class="img-ubicacion">
             <article>
                 <h3>Lineas de Tren</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ipsum!</p>
             </article>
-            <img src="../img/bycicle.svg" alt="bici" class="img-bici">
+            <img src="../img/bycicle.svg" alt="bici" class="img-ubicacion">
             <article>
                 <h3>Estaciones de BaBici</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ipsum!</p>
             </article>
-        </section>
+        </section> -->
     </main>
     <!-- termina -->
 
     <footer id="footer">
-        <p class="footer__text">&copy;2021</p>
+        <p class="footer__text">Todos los derechos reservados &copy;2021</p>
         <nav class="footer__menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -71,5 +171,9 @@
             </ul>
         </nav>
     </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
