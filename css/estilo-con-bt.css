@@ -82,3 +82,10 @@ footer nav ul li {
 .img-ubicacion{
     width: 5vw;
 }
+
+.mesaOperativa__list{
+    list-style-type: circle;
+}
+.mesaOperativa__list-item{
+    font-size: 1rem;
+}
