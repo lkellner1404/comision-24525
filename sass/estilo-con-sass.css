@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Roboto, sans-serif;
+  background-color: #1F72A6;
+}
+
+body a:link, body a:visited {
+  color: black;
+}
+
+nav .nav-logo {
+  width: 20vw;
+}
+
+nav .nav-item {
+  font-size: 1rem;
+  padding: 1vw;
+  margin: 0.2rem 1.5rem;
+  background-color: #96B9D9;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px #2e2e2e;
+          box-shadow: 5px 5px 5px #2e2e2e;
+}
+
+nav .squish {
+  -webkit-transition: 235ms;
+  transition: 235ms;
+}
+
+nav .squish:hover {
+  -webkit-transform: scale(0.75, 1.25);
+          transform: scale(0.75, 1.25);
+}
+
+main {
+  width: 90vw;
+  margin: 2rem auto;
+  background-color: #96B9D9;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #96B9D9, 5px -5px 10px #96B9D9, -5px -5px 10px #96B9D9, -5px 5px 10px #96B9D9;
+          box-shadow: 5px 5px 10px #96B9D9, 5px -5px 10px #96B9D9, -5px -5px 10px #96B9D9, -5px 5px 10px #96B9D9;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main p {
+  font-size: 1rem;
+}
+
+main#contact img {
+  width: 50vw;
+  border-radius: 1rem;
+}
+
+main .mesaOperativa__list {
+  list-style-type: circle;
+}
+
+main .mesaOperativa__list-item {
+  font-size: 1rem;
+}
+
+main .img-ubicacion {
+  width: 5vw;
+}
+
+main .img-border-radius {
+  border-radius: 5em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline;
+  padding: 0.2rem;
+}
+/*# sourceMappingURL=estilo-con-sass.css.map */

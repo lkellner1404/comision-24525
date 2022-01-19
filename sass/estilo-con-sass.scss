@@ -1,0 +1,62 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $fontSize;
+    font-family: $fontFamily, sans-serif;
+    background-color: $bg-dark;
+    a{
+        &:link,&:visited{
+            color: black;
+        }
+    }
+}
+
+@import 'navigation';
+
+main {
+    width: 90vw;
+    margin: 2rem auto;
+    background-color: $bg-light;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px $bg-light,
+                5px -5px 10px $bg-light,
+                -5px -5px 10px $bg-light,
+                -5px 5px 10px $bg-light;
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    &#contact{
+        img{
+            width: 50vw;
+            border-radius: 1rem;
+        }
+    }
+    .mesaOperativa__list{
+        list-style-type: circle;
+        &-item{
+            font-size: 1rem;
+        }
+    }
+    .img{
+        &-ubicacion{
+            width: 5vw;
+        }
+        &-border-radius{
+            border-radius: 5em;
+        }
+    }
+}
+
+
+
+
+@import 'footer';
