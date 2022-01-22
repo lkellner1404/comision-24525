@@ -21,9 +21,11 @@ $redes-sociales:(
     justify-content: space-between;
     align-items: baseline;
     width: 90vw;
-   
+    &__text{
+        width:30vw;
+    }
     &__social{
-        width: 17vw;
+        width: 20vw;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -39,13 +41,16 @@ $redes-sociales:(
             }
         }
     }
-    nav {
+    &__menu{
+        width:30vw;
+        display: flex;
+        justify-content: flex-end;
         ul {
             list-style: none;
-            li {
-                display: inline;
-                padding: 0.2rem;
-            }
+        }
+        li {
+            display: inline;
+            padding: 0.2rem;
         }
     }
 

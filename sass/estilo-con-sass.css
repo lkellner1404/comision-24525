@@ -91,8 +91,12 @@ main .img-border-radius {
   width: 90vw;
 }
 
+.footer__text {
+  width: 30vw;
+}
+
 .footer__social {
-  width: 17vw;
+  width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,11 +123,21 @@ main .img-border-radius {
   background: #0e76a8;
 }
 
-.footer nav ul {
+.footer__menu {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__menu ul {
   list-style: none;
 }
 
-.footer nav ul li {
+.footer__menu li {
   display: inline;
   padding: 0.2rem;
 }
