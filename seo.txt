@@ -1,0 +1,4 @@
+Use el tag meta keyword con las palabras "megadiagnostico, salud, obra, social, prepaga, red, centro, medico, laboratorio, analisis" que son el nombre de la empresa y palabras relacionadas con la actividad y servicios que presta la misma, en todos los html. En las paginas dentro de pages tienen ademas palabras relacionadas con el contenido de ese html en particular. 
+Use el tag meta description para colocar descripciones en cada html teniendo un resumen de la información presente en cada uno.
+Controle que los títulos esten correctos.
+Controle la sintaxis de los headings
