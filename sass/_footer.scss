@@ -1,6 +1,44 @@
-footer {
+//mapa redes sociales
+
+$redes-sociales:(
+    instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%),
+    linkedin: #0e76a8
+);
+
+//mixin boton redes sociales
+
+@mixin btn-social ($height, $width){
+    height: $height;
+    width: $width;
+    color:snow;
+}
+
+
+
+.footer {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    width: 90vw;
+   
+    &__social{
+        width: 17vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+        .btn {
+            &-instagram{
+                @include btn-social(30px, 150px);
+                background: map-get($redes-sociales,instagram);
+            }
+            &-linkedin{
+                @include btn-social(30px, 150px);
+                background: map-get($redes-sociales,linkedin)
+            }
+        }
+    }
     nav {
         ul {
             list-style: none;
@@ -10,4 +48,7 @@ footer {
             }
         }
     }
+
+
+
 }

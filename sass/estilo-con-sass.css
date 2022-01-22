@@ -77,20 +77,53 @@ main .img-border-radius {
   border-radius: 5em;
 }
 
-footer {
+.footer {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 90vw;
 }
 
-footer nav ul {
+.footer__social {
+  width: 17vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__social .btn-instagram {
+  height: 30px;
+  width: 150px;
+  color: snow;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer__social .btn-linkedin {
+  height: 30px;
+  width: 150px;
+  color: snow;
+  background: #0e76a8;
+}
+
+.footer nav ul {
   list-style: none;
 }
 
-footer nav ul li {
+.footer nav ul li {
   display: inline;
   padding: 0.2rem;
 }

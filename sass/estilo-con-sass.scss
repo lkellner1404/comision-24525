@@ -11,8 +11,11 @@ body {
     font-family: $fontFamily, sans-serif;
     background-color: $bg-dark;
     a{
-        &:link,&:visited{
+        &:link{
             color: black;
+        }
+        &:visited {
+            @extend a:link ;
         }
     }
 }
